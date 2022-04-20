@@ -4,17 +4,17 @@ os.system("python.exe -m pip install pysocks")
 try:
     import requests
 except ImportError:
-    os.system("python.exe -m pip install requests")
+    os.system("pip install requests")
     import requests
 try:
     import colorama
 except ImportError:
-    os.system("python.exe -m pip install colorama")
+    os.system("pip install colorama")
     import colorama
 try:
     import autopy
 except ImportError:
-    os.system("python.exe -m pip install autopy")
+    os.system("pip install autopy")
     import autopy
 colorama.init()
 class THRIDING():
