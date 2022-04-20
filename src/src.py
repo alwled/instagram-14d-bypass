@@ -503,7 +503,7 @@ class XNCE():
             except Exception as err:
                 print(f"\n{DESIGN.redminus} {err}")
                 print(f"\n{DESIGN.redminus} Failed To Check 14D Please Check It Manually")
-                print(f"\n{DESIGN.blueplus} Enter If You Check And Su`  re It's 14D: ", end="")
+                print(f"\n{DESIGN.blueplus} Enter If You Check And Sure It's 14D: ", end="")
                 input()
         else:
             print(f"\n{DESIGN.redminus} {req.text}, {req.status_code}")
