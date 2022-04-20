@@ -31,7 +31,6 @@ class THRIDING():
             t = threading.Thread(target=self.target)
             t.setDaemon(True)
             self.threads_list.append(t)
-        return self.threads_list
 
     def start(self):
         for thread_start in self.threads_list:
