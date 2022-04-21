@@ -18,12 +18,12 @@ except ImportError:
     import autopy
 colorama.init()
 class THRIDING():
-    def __init__(self, target, target2):
+    def __init__(self, target, target2=None):
         self.threads_list = []
         self.target = target
         self.target2 = target2
     def gen(self, threads):
-        if self.target2!="":
+        if self.target2!=None:
             t = threading.Thread(target=self.target2)
             t.setDaemon(True)
             self.threads_list.append(t)
@@ -850,7 +850,7 @@ if tmode=="1":
         print(DESIGN.xrblue)
         print(f"\n{DESIGN.blueplus} Enter To Start: ", end="")
         input()
-        t = THRIDING(x.main0, "")
+        t = THRIDING(x.main0)
         t.gen(2000)
         t.start()
         t.join()
@@ -860,7 +860,7 @@ if tmode=="1":
         print(DESIGN.xrblue)
         print(f"\n{DESIGN.blueplus} Enter To Start: ", end="")
         input()
-        t = THRIDING(x.main1, "")
+        t = THRIDING(x.main1)
         t.gen(2000)
         t.start()
         t.join()
@@ -880,7 +880,7 @@ if tmode=="1":
         print(DESIGN.xrblue)
         print(f"\n{DESIGN.blueplus} Enter To Start: ", end="")
         input()
-        t = THRIDING(x.main3, "")
+        t = THRIDING(x.main3)
         t.gen(999)
         t.start()
         t.join()
